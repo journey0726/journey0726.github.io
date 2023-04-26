@@ -2,7 +2,6 @@
   "name": "newBlog",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/journey0726/newBlog.git",
   "author": "chenhui <1549120948@qq.com>",
   "license": "MIT",
   "scripts": {
