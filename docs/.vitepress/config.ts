@@ -18,6 +18,10 @@ export default defineConfig({
           items: [
             {
               text: "typescript",
+              link: "/blog/frontend/base",
+            },
+            {
+              text: "基础知识",
               link: "/blog/frontend/typescript",
             },
             {
