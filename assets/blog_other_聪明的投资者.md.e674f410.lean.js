@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as r,O as t}from"./chunks/framework.0d343703.js";const b=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blog/other/聪明的投资者.md"}'),h={name:"blog/other/聪明的投资者.md"},o=t("",14),i=[o];function l(n,d,c,s,m,_){return r(),e("div",null,i)}const k=a(h,[["render",l]]);export{b as __pageData,k as default};
