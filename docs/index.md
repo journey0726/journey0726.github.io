@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "blog"
+  name: "Journey0726"
   text: "blog"
-  tagline: My great project tagline
+  tagline: My daily records
   actions:
     - theme: brand
       text: Markdown Examples
@@ -22,4 +22,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
