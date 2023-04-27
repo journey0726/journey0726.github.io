@@ -15,7 +15,7 @@
 
 `tsc` ts 的编译器, 用于将 ts 转成 js。
 
-全局安装 tsc `npm i -g typescript` 或者 `yarn add typescript global` 。
+全局安装 tsc `npm i -g typescript` 或者 `yarn global add typescript` 。
 
 命令: `tsc --init` 。
 
