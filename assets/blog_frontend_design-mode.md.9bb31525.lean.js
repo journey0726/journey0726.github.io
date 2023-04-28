@@ -1,0 +1,1 @@
+import{_ as s,c as n,o as a,V as l}from"./chunks/framework.9ad71fd6.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blog/frontend/design-mode.md"}'),p={name:"blog/frontend/design-mode.md"},o=l("",25),e=[o];function t(c,r,y,F,D,C){return a(),n("div",null,e)}const g=s(p,[["render",t]]);export{i as __pageData,g as default};

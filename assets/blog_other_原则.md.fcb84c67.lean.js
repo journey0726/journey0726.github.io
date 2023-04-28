@@ -1,1 +1,0 @@
-import{_ as a,c as l,o as i,O as e}from"./chunks/framework.0d343703.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blog/other/原则.md"}'),t={name:"blog/other/原则.md"},r=e("",16),o=[r];function h(n,s,u,d,c,_){return i(),l("div",null,o)}const q=a(t,[["render",h]]);export{m as __pageData,q as default};
