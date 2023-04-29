@@ -34,6 +34,10 @@ export default defineConfig({
               text: "设计原则",
               link: "/blog/frontend/design-principle",
             },
+            {
+              text: "烟花效果",
+              link: "/blog/frontend/fireworks",
+            },
           ],
         },
         {
