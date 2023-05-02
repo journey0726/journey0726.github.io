@@ -53,6 +53,10 @@ export default defineConfig({
           text: "随便看看",
           items: [
             {
+              text: "学习目标",
+              link: "/blog/other/goal",
+            },
+            {
               text: "聪明的投资者",
               link: "/blog/other/聪明的投资者",
             },
