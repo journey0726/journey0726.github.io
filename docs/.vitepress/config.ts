@@ -31,6 +31,10 @@ export default defineConfig({
               link: "/blog/frontend/base",
             },
             {
+              text: "手写方法",
+              link: "/blog/frontend/JSMethods",
+            },
+            {
               text: "设计模式",
               link: "/blog/frontend/design-mode",
             },
