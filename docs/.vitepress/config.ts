@@ -23,6 +23,10 @@ export default defineConfig({
               link: "/blog/frontend/typescript",
             },
             {
+              text: "TS类型体操",
+              link: "/blog/frontend/typeGymnastics",
+            },
+            {
               text: "基础知识",
               link: "/blog/frontend/base",
             },
