@@ -328,7 +328,7 @@ function debounce(fn, delay) {
     if (timer) {
       clearTimeout(timer);
     }
-    setTimeout(() => {
+    timer = setTimeout(() => {
       fn(...args);
     }, delay);
   };
