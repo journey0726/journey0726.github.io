@@ -102,3 +102,23 @@ map1.clear();
 - `WeakMap` 的键只能使 `Object` 或者 继承自 `Object` 的类型。
 - 这些键并不属于正式的引用，不会阻止垃圾回收。
 - 不可迭代。
+
+## Set
+
+```js
+cosnt set = new Set()
+set.add(1)
+set.has(1)
+set.delete(1)
+new Set([...array]) //用于数组去重
+```
+
+- `Set` 类似于数组，但是成员的值都是唯一的，可以用于数组去重。
+- 写入 `Set` 中的数据不会自动转换类型。
+- 在 `Set` 中相同的对象并不相等。
+- 在 `Set` 中 `NaN` 是相等的。
+
+## WeakSet
+
+- 与 `Set` 类似，区别在于值只能存储对象。
+- 不能遍历，多用于存储 `DOM对象`。
