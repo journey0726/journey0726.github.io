@@ -1,4 +1,7 @@
 ```ts
+type Pick<T, K in keyof T> = {
+  [P in K]: T[P]
+}
 type PromiseType<T extends Promise<any>> = T extends Promise<infer U> ? U : never;
 type Partical<T> = {
   [K in keyof T]?: T[K];
