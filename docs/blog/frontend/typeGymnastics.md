@@ -30,13 +30,13 @@ type Exclude1<T, K> = T extends K ? never : K;
 function isNumber(val: unknown): val is number {
   return typeof val === "number";
 }
-type ReadOnly2<T> = {
+type ReadOnly<T> = {
   readonly [K in keyof T]: T[K];
 };
 type Mutable<T> = {
   -readonly [K in keyof T]: T[K];
 };
-type Omit2<T, K> = Pick<T, Exclude<keyof T, K>>;
+type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
 type NonNullable2<T> = T extends null | undefined ? never : T;
 type Record2<T extends keyof any, K extends keyof T> = {
   [P in T]: K;
