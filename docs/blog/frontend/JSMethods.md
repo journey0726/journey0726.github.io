@@ -322,28 +322,39 @@ function myNew(fn, ...args) {
   return obj;
 }
 
-function debounce(fn, delay) {
+function debounce(fn, delay, immediate = true) {
   let timer = null;
+  let isInvoke = false
   return function (...args) {
+    if (!isInvoke && immediate) {
+      fn.apply(this, args)
+      isInvoke = true
+      return 
+    }
     if (timer) {
       clearTimeout(timer);
+      timer = null
+      isInvoke = false
     }
     timer = setTimeout(() => {
-      fn(...args);
+      fn.apply(this, args);
     }, delay);
   };
 }
 
-function throttle(fn, delay) {
-  let flag = true;
-  return function (...args) {
-    if (!flag) return;
-    flag = false;
-    setTimeout(() => {
-      fn(...args);
-      flag = true;
-    }, 1000);
-  };
+function throttle(fn, delay, immediate = true) {
+  let oldTime = 0
+  return function(...args) {
+    if (immediate && oldTime == 0) {
+      fn.apply(this, args)
+      oldTime = Date.now()
+      return
+    }
+    if (Date.now() - oldTime >= delay) {
+      fn.apply(this, args)
+      oldTime = Date.now()
+    }
+  }
 }
 
 //用setTimeOut 实现setInterval
