@@ -315,26 +315,30 @@ Promise.prototype.myFinally = function (callback) {
 ## Utils
 
 ```js
-function myNew(fn, ...args) {
+function New(fn, ...args) {
   let obj = {};
   obj.__proto__ = fn.prototype;
-  fn.apply(obj, args);
-  return obj;
+  let res = fn.apply(obj, args);
+  if (res instanceof Object) {
+    return res;
+  } else {
+    return obj;
+  }
 }
 
 function debounce(fn, delay, immediate = true) {
   let timer = null;
-  let isInvoke = false
+  let isInvoke = false;
   return function (...args) {
     if (!isInvoke && immediate) {
-      fn.apply(this, args)
-      isInvoke = true
-      return 
+      fn.apply(this, args);
+      isInvoke = true;
+      return;
     }
     if (timer) {
       clearTimeout(timer);
-      timer = null
-      isInvoke = false
+      timer = null;
+      isInvoke = false;
     }
     timer = setTimeout(() => {
       fn.apply(this, args);
@@ -343,18 +347,18 @@ function debounce(fn, delay, immediate = true) {
 }
 
 function throttle(fn, delay, immediate = true) {
-  let oldTime = 0
-  return function(...args) {
+  let oldTime = 0;
+  return function (...args) {
     if (immediate && oldTime == 0) {
-      fn.apply(this, args)
-      oldTime = Date.now()
-      return
+      fn.apply(this, args);
+      oldTime = Date.now();
+      return;
     }
     if (Date.now() - oldTime >= delay) {
-      fn.apply(this, args)
-      oldTime = Date.now()
+      fn.apply(this, args);
+      oldTime = Date.now();
     }
-  }
+  };
 }
 
 //用setTimeOut 实现setInterval
