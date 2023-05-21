@@ -3,4 +3,5 @@
 
 - rust
   [https://course.rs/](https://course.rs/)
+  理解 `rust` 的所有权。
 - webAssembly
