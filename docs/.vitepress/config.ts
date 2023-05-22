@@ -80,6 +80,10 @@ export default defineConfig({
               text: "原则",
               link: "/blog/other/原则",
             },
+            {
+              text: "纳瓦尔宝典",
+              link: "/blog/other/纳瓦尔宝典",
+            },
           ],
         },
       ],
