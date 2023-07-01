@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o}from"./chunks/framework.5a3bb230.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blog/other/穷查理宝典.md","filePath":"blog/other/穷查理宝典.md"}'),r={name:"blog/other/穷查理宝典.md"};function a(s,_,c,n,p,d){return t(),o("div")}const m=e(r,[["render",a]]);export{l as __pageData,m as default};
