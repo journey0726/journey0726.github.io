@@ -84,6 +84,10 @@ export default defineConfig({
               text: "纳瓦尔宝典",
               link: "/blog/other/纳瓦尔宝典",
             },
+            {
+              text: "穷查理宝典",
+              link: "/blog/other/穷查理宝典",
+            },
           ],
         },
       ],
