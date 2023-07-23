@@ -1,5 +1,6 @@
-rust
-leetcode 两数之和
+```rust
+// rust
+// leetcode 两数之和
 
 use std::collections::HashMap;
 impl Solution {
@@ -16,3 +17,5 @@ impl Solution {
         vec![]
     }
 }
+
+```
