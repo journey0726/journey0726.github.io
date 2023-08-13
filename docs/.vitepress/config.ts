@@ -46,6 +46,10 @@ export default defineConfig({
               text: "烟花效果",
               link: "/blog/frontend/fireworks",
             },
+            {
+              text: "记录",
+              link: "/blog/frontend/record",
+            },
           ],
         },
         {
