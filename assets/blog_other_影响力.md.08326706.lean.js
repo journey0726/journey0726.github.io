@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as t,X as r}from"./chunks/framework.6e839c56.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"blog/other/影响力.md","filePath":"blog/other/影响力.md"}'),o={name:"blog/other/影响力.md"},h=r("",10),i=[h];function l(n,d,s,c,_,u){return e(),t("div",null,i)}const q=a(o,[["render",l]]);export{m as __pageData,q as default};
